@@ -7,4 +7,13 @@ description: Your description
 
 # Home?
 
-{{ site.posts.first }}
+{{ for post in site.posts limit:3 }}
+## [{{ post.title }}]({{ post.url }})
+*{{ post.date | date: "%B %d, %Y" }}*
+
+{{ post.excerpt }}
+
+[Read more...]({{ post.url }})
+
+---
+{{ endfor }}
