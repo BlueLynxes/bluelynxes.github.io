@@ -19,3 +19,16 @@ description: Your description
 
 ---
 {% endfor %}
+
+# Posts Debug
+
+Number of posts: {{ site.posts.size }}
+
+{% if site.posts.size > 0 %}
+Posts found:
+{% for post in site.posts %}
+- {{ post.title }} ({{ post.date }})
+{% endfor %}
+{% else %}
+No posts found!
+{% endif %}
