@@ -1,19 +1,20 @@
 ---
 layout: default
-permalink: /
-title: Your Site Title
-description: Your description
+title: "Rabbithole"
+description: "Utilizing my Freedom of Speech until we become the new CCP"
 ---
 
-# Home?
+# Recent Posts
 
-{% for post in site.posts limit:3 %}
+{% for post in site.posts %}
 ## [{{ post.title }}]({{ post.url }})
 *{{ post.date | date: "%B %d, %Y" }}*
 
 {{ post.excerpt }}
 
-[Read more...]({{ post.url }})
-
 ---
 {% endfor %}
+
+{% if site.posts.size == 0 %}
+No posts found yet.
+{% endif %}
