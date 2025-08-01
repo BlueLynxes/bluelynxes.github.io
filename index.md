@@ -4,6 +4,10 @@ title: "Rabbithole"
 description: "Utilizing my Freedom of Speech until we become the new CCP"
 ---
 
+# Homepage
+
+There is nothing here for now, read a post below.
+
 # Recent Posts
 
 {% for post in site.posts %}
