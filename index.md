@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Welcome to My Homepage
 permalink: /
+title: Your Site Title
+description: Your description
 ---
 
 # Home?
